@@ -33,4 +33,4 @@ describe('$localStorage', function() {
 
     jasmine.clock().uninstall();
   });
-})
+});

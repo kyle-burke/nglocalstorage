@@ -36,12 +36,11 @@
       $window.localStorage.removeItem(key+'-expiration');
     }
 
+    // ideally called in your main module's run block
     function checkExpiredItems() {
-      for (var i = 0; i < localStorage.length; i++) {
-        var key = localStorage.key(i);
-
+      for (var key in $window.localStorage) {
         if (key.indexOf('-expiration') > -1) {
-          _registerExpiration(key, localStorage.getItem(key+'-expiration'));
+          _registerExpiration(key.replace('-expiration', ''), $window.localStorage.getItem(key+'-expiration'));
         }
       }
     }
