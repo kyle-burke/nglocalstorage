@@ -3,9 +3,9 @@
   angular
     .module('$localStorage', [])
     .factory('$localStorage', $localStorage);
-  $localStorage.$inject = ['$window', '$timeout'];
+  $localStorage.$inject = ['$window'];
   /* @ngInject */
-  function $localStorage($window, $timeout) {
+  function $localStorage($window) {
     var service = {
       get: get,
       set: set,

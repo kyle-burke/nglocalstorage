@@ -32,5 +32,5 @@ describe('$localStorage', function() {
     expect($window.localStorage.getItem('test-expiration')).toBe(null);
 
     jasmine.clock().uninstall();
-  })
+  });
 })
