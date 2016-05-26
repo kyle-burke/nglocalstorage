@@ -1,5 +1,7 @@
+[![Build Status](https://api.travis-ci.org/kyle-burke/nglocalstorage.svg)](https://api.travis-ci.org/kyle-burke/nglocalstorage)
+
 # $localStorage
-A little Angular 1.x service that uses Angular's wrapper for $window and will take arguments 
+A little Angular 1.x service that uses Angular's wrapper for $window and will take arguments
 to set up expiration for your localStorage items. Passing in a timestamp in the future on the
 `$localStorage.set` method will create a setTimeout to clean out your item.
 
