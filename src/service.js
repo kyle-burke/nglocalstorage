@@ -40,7 +40,7 @@
     function checkExpiredItems() {
       for (var key in $window.localStorage) {
         if (key.indexOf('-expiration') > -1) {
-          _registerExpiration(key.replace('-expiration', ''), $window.localStorage.getItem(key);
+          _registerExpiration(key.replace('-expiration', ''), $window.localStorage.getItem(key));
         }
       }
     }
